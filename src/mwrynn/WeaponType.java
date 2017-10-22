@@ -8,5 +8,7 @@ public enum WeaponType {
     AND,
     OR,
     XOR,
-    NAND
+    NAND,
+    RSHIFT,
+    LSHIFT
 }
