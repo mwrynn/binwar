@@ -1,6 +1,5 @@
 package mwrynn;
 
-import java.math.*;
 /**
  * Created by mwrynn on 10/22/17.
  */
@@ -23,24 +22,7 @@ public class Weapon {
     }
     
     public byte evaluateDamage(byte otherBitStr) {
-        switch (weaponType) {
-            case SUBTRACT:
-                return (byte)(otherBitStr - bitStr);
-            case AND:
-                return (byte)(bitStr & otherBitStr);
-            case OR:
-                return (byte)(bitStr | otherBitStr);
-            case XOR:
-                return (byte)(bitStr ^ otherBitStr);
-            case NAND:
-                return (byte)~(bitStr & otherBitStr);
-            case RSHIFT:
-                return (byte)(otherBitStr >> bitStr);
-            case LSHIFT:
-                return (byte)(otherBitStr << bitStr);
-            default:
-                return otherBitStr;
-        }
+        return weaponType.evaluateDamage(bitStr, otherBitStr);
     }
     
     public String toString() { //output as xxxx, e.g. 0110 - only 4 bits
