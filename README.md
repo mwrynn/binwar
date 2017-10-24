@@ -1,3 +1,3 @@
 # Binary Warrior
 
-Binary Warrior is a game in which the player controls a character and battles enemies using the power of binary operations. :)
+Binary Warrior is a combat-oriented roguelike game in which the player character must defeat enemies using the power of binary operations! :)
