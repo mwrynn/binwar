@@ -50,7 +50,7 @@ public class Weapon {
     public static String formatByteAs4Bits(byte b) {
         String bitOutputStr = "";
         for (int i = 0; i < 4; i++) {
-            if (((byte) (Math.pow(2, i)) & b) == 0) {
+            if (((1 << i) & b) == 0) {
                 bitOutputStr = "0" + bitOutputStr;
             } else {
                 bitOutputStr = "1" + bitOutputStr;
